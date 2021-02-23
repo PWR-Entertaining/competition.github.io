@@ -13,12 +13,12 @@
         $('input[name="birthday"]').daterangepicker({
           singleDatePicker: true,
           showDropdowns: true,
-          minYear: 1901,
+          minYear: 1900,
           opens: 'center',
           drops: 'up',
+          changeMonth: true,
+          dateFormat: 'yy-mm-dd',
           maxYear: parseInt(moment().format('YYYY'),10)
-        },  function(start, end, label) {
-            //  console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
         });
       });
       </script>
@@ -46,7 +46,7 @@
             </div>  
             <div class="auth_reg_button">
                 <button class="back_button" type="submit" onclick='location.href="reg_first.html"' name="auth_submit">Вернуться</button>
-                <button class="reg_button" type="submit" name="reg_submit">Далее</button>
+                <button class="reg_button" type="submit" name="reg_submit">Готово</button>
             </div>
           </form>
         </div>
