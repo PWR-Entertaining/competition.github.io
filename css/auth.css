@@ -95,7 +95,6 @@ input:focus {
 
 .date_of_birth > label{
   margin: 0% 0% 0% 20px;
-  /* padding: 1 0 0 20; */
   font-family: Montserrat-Regular;
   font-size: 0.85em;
   color: #fff;
@@ -104,14 +103,17 @@ input:focus {
 .date_of_birth > input {
   box-shadow: none;
   margin: 7px 0 7px 20px;
-  padding: 7px 0px 7px 7px;
+  padding: 7px 0px 7px 0;
   font-family: Montserrat-Regular;
   height: 30px;
+  width: 100px;
   border-radius: 5px;
   border:none;
   outline: none;
   font-size: 11px;
+  text-align: center;
 }
+
 .auth_reg_button{
     display: flex;
     margin: 10% auto 15% 10%;
