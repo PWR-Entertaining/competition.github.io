@@ -4,15 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/auth.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
-    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
-    <script>
-      webshims.setOptions('waitReady', false);
-      webshims.setOptions('forms-ext', {type: 'date'});
-      webshims.setOptions('forms-ext', {type: 'time'});
-      webshims.polyfill('forms forms-ext');
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+      <script>
+      $(function() {
+        $('input[name="birthday"]').daterangepicker({
+          singleDatePicker: true,
+          showDropdowns: true,
+          minYear: 1901,
+          opens: 'center',
+          drops: 'up',
+          maxYear: parseInt(moment().format('YYYY'),10)
+        },  function(start, end, label) {
+            //  console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+        });
+      });
+      </script>
     <title>Competition</title>
 </head>
 
@@ -33,7 +42,7 @@
             </div>  
             <div class="date_of_birth">
               <label>Выберите свою дату рождения:</label>
-              <input type="date">
+              <input type="text" name="birthday" value="01/01/2000" />
             </div>  
             <div class="auth_reg_button">
                 <button class="back_button" type="submit" onclick='location.href="reg_first.html"' name="auth_submit">Вернуться</button>
