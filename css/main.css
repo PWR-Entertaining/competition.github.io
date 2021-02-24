@@ -20,14 +20,6 @@ nav{
 }
 
 
-/* .logo > img{ 
-    background-position: center;
-    size: 2rem 2rem;
-    width: ;
-    size: 10px;
-    color:#fff;
-} */
-
 .logo{
     /* display: inline; */
     margin: 0 0 0 5%;
@@ -157,19 +149,15 @@ ul, li, a{
     /* padding: 10px 0; */
     border-bottom: 1px rgba(255, 255, 255, 0) solid;
 }
+.no-touch .main_el:hover .side_list{
+    display: block;
+
+}
 .main_el:hover > p{
     border-bottom: 1px white solid;
 }
 
-.menu, .go_out {
-    /* order: inherit!important; */
-    }
-
     @media screen and (max-width: 550px) {
-        header{
-            /* width: 125%; */
-        }
-
         .menu > ul > li{
             font-size: 8px;
         }
@@ -187,9 +175,9 @@ ul, li, a{
         }
 
         .logo > button{
-            margin: 3.5 0 ;
+            margin: 4 0 ;
             padding: 0;
-            height: 33px;
+            height: 32px;
             width: 90px;
             background: none;
             cursor: pointer;
@@ -204,9 +192,4 @@ ul, li, a{
         .menu > ul{
             height: 40px;
         }
-
-        .side_list{
-            /* width: 80px; */
-        }
-        
     }
