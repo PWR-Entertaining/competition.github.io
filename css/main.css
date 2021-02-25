@@ -20,6 +20,10 @@ h2 {
   font-family: Montserrat-Medium;
 }
 
+button:focus{
+    outline: none !important;
+}
+
 .view {
   padding: 0;
   margin: 40px 5% 0% 5%;
