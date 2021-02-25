@@ -68,10 +68,9 @@ ul, li, a{
 }
 
 .menu{
-    margin: 0 0 0 0;
-    width: 400px;
-    /* width: 30%; */
     align-self: center;
+    margin: 0px 0px 0px 0px;
+    width: 400px;
 }
 
 .menu > h3{
@@ -174,6 +173,9 @@ ul, li, a{
             height: 40px;
         }
 
+        .menu{
+            width: 170px;
+        }
         .menu > h3{
             margin-left: 0;
             font-size: 10px;
