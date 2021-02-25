@@ -1,9 +1,7 @@
 
 .auth_reg_block{
-
     width: 400px;
     height: auto;
-    left: 50%;
     background-color: #4ad295;
     background-size: cover;
     border-radius: 7%;
@@ -135,4 +133,48 @@ input:focus {
 .auth_reg_button > button:active {
     color: #000;
     border: 2px solid #896fff;
+}
+
+.error{
+  display: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 350px;
+  height: 150px;
+  border-radius: 10px;
+    margin: 0 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error > label{
+  position:absolute;
+  font-family: Montserrat-Bold;
+  margin: 10px 0px 0px 10px;
+}
+.error > p{
+  position:absolute;
+  font-size: 12px;
+  font-family: Montserrat-Regular;
+  margin: 40px 0px 0px 10px;
+  width: 320px;
+  height: 70px;
+}
+.error > button{
+  position:absolute;
+  width: 50px;
+  font-family: Montserrat-Regular;
+  color: #fff;
+  margin: 120px 0px 0px 290px;
+  border-radius: 10px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #4ad295;
+  font-family: Montserrat-Regular;
+}
+
+.error  > button:active {
+  border: 1px solid #896fff;
 }
