@@ -1,0 +1,137 @@
+.auth_reg_block{
+
+    width: 400px;
+    height: auto;
+    left: 50%;
+    background-color: #4ad295;
+    background-size: cover;
+    border-radius: 7%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.auth_reg_block_content{
+    padding-top: 15%;
+}
+
+@font-face{
+    font-family: "Montserrat-Bold"; /* ָלÿ רנטפעא */
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf"); /* ֿףעü ך פאיכף סמ רנטפעמל */
+  }
+  
+  @font-face{
+    font-family: "Montserrat-Thin"; 
+    src: url("../fonts/Montserrat/Montserrat-Thin.ttf");
+  }
+
+  @font-face{
+    font-family: "Montserrat-Regular"; 
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  }
+.auth_reg_block_head_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 10% 10%;
+    font-weight: 600;
+    color: #fff;
+    font-family: Montserrat-Bold;
+    /* opacity: 0.7; */
+}
+
+.auth_reg_style > input{
+  display: block;
+  margin: 0px auto 20px auto;
+  width: 80%;
+  height: 45px;
+  padding-left: 5%;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: Montserrat-Regular;
+  border:none;
+  outline: none;
+}
+
+input:focus {
+  color: #000000;
+  border-radius: 10px;
+  border: 2px solid #896fff;
+}
+
+.change_sex{
+  display: block;
+  margin: 0 10% 20;
+}
+
+.change_sex > label{
+  margin: 0% 40% 0% 20px;
+  font-family: Montserrat-Regular;
+  font-size: 0.85em;
+  color: #fff;
+}
+
+.change_sex > select{
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  font-family: Montserrat-Regular;
+  font-size: 11px;
+  margin: 7px 0 7px 20px;
+  padding-left: 23px;
+  background-color: white;
+}
+
+.date_of_birth {
+  display: block;
+  margin: 0 10% 20;
+}
+
+.date_of_birth > label{
+  margin: 0% 0% 0% 20px;
+  font-family: Montserrat-Regular;
+  font-size: 0.85em;
+  color: #fff;
+}
+
+.date_of_birth > input {
+  box-shadow: none;
+  margin: 7px 0 7px 20px;
+  padding: 7px 0px 7px 0;
+  font-family: Montserrat-Regular;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border:none;
+  outline: none;
+  font-size: 11px;
+  text-align: center;
+}
+
+.auth_reg_button{
+    display: flex;
+    margin: 10% auto 15% 10%;
+    width: 80%;   
+}
+
+.auth_reg_button > button{
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    font-family: Montserrat-Regular;
+}
+
+.auth_reg_button > button:active {
+    color: #000;
+    border: 2px solid #896fff;
+}
