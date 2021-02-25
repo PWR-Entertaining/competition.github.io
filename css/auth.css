@@ -163,16 +163,16 @@ input:focus {
 }
 .error > button{
   position:absolute;
-  width: 50px;
+  width: 40px;
   font-family: Montserrat-Regular;
   color: #fff;
-  margin: 120px 0px 0px 290px;
+  margin: 120px 0px 0px 300px;
   border-radius: 10px;
   height: 20px;
   border: none;
   cursor: pointer;
   background-color: #4ad295;
-  font-family: Montserrat-Regular;
+  font-family: Montserrat-Bold;
 }
 
 .error  > button:active {
