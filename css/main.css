@@ -78,6 +78,8 @@ tr {
   background-repeat: no-repeat;
   height: 15px;
   width: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 .edit_button:hover {
@@ -86,6 +88,10 @@ tr {
 
 .edin_button_td {
   border: none;
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 .delete_button_td > button {
@@ -97,6 +103,8 @@ tr {
   background-repeat: no-repeat;
   height: 15px;
   width: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 .delete_button_td > button:hover {
@@ -105,6 +113,10 @@ tr {
 
 .delete_button_td {
   border: none;
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 .add {
