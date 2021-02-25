@@ -60,8 +60,8 @@ button:focus{
 }
 td {
   border: 2px solid rgb(175, 175, 175);
-  border-radius: 10px;
-  padding: 3px 3px 3px 3px;
+  border-radius: 7px !important;
+  padding: 4px 5px 4px 5px;
 }
 
 tr {
