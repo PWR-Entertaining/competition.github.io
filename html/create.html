@@ -1,9 +1,11 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
     <title>Competition</title>
 </head>
 <header>
@@ -12,24 +14,55 @@
             <button class="go_main" onclick='location.href="main.html"'></button>
         </div>
         <div class="menu">
-            <ul>
-                <li class="main_el">
-                    <p onclick='location.href="create.html"'>Создание</p>
-                </li>
-                <li class="main_el">
-                    <p onclick='location.href="edit.html"'>Редактирование</p>
-                </li>
-                <li class="main_el">
-                    <p onclick='location.href="delete.html"'>Удаление</p>
-                </li>
-            </ul>
+            <h3>Быстрее, выше, сильнее!</h3>
         </div>
         <div class="go_out">
             <button class="go_out_button" onclick='location.href="../index.html"'></button>
         </div>
     </nav>
 </header>
-<body>
 
+<body onclick="">
+    <div class="view">
+        <div class="categories">
+            <h2>Добавление</h2>
+            <select>
+                <option>пользователей</option>
+                <option>участников</option>
+                <option>тренеров</option>
+                <option>соревнований</option>
+                <option>видов спорта</option>
+            </select>
+        </div>
+        <table class="table_view">
+            <tr>
+                <td>Иван</td>
+                <td>Дидюля</td>
+                <td>мужской</td>
+                <td>20-09-2000</td>
+            </tr>
+            <tr>
+                <td>Мария</td>
+                <td>Клинова</td>
+                <td>женский</td>
+                <td>20-09-2000</td>
+            </tr>
+            <tr>
+                <td>Максим</td>
+                <td>Гангрена</td>
+                <td>мужской</td>
+                <td>29-09-2000</td>
+            </tr>
+            <tr>
+                <td class="add_new"><input type="first_name" placeholder="Введите имя" required="required"></td>
+                <td class="add_new"><input type="second_name" placeholder="Введите фамилию" required="required"></td>
+                <td class="add_new"><input type="sex" placeholder="Введите свой пол" required="required"></td>
+                <td class="add_new"><input type="date_of_birth" placeholder="Введите свою дату рождения"
+                        required="required"></td>
+            </tr>
+        </table>
+        <button name="Save" class="save_button" onclick='location.href="main.html"'>Сохранить</button>
+    </div>
 </body>
+
 </html>

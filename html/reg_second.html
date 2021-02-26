@@ -1,56 +1,61 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/auth.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-      <script>
-      $(function() {
-        $('input[name="birthday"]').daterangepicker({
-          singleDatePicker: true,
-          showDropdowns: true,
-          minYear: 1900,
-          opens: 'right',
-          drops: 'up',
-          changeMonth: true,
-          dateFormat: 'yy-mm-dd',
-          maxYear: parseInt(moment().format('YYYY'),10)
-        });
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/auth.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <script>
+    $(function () {
+      $('input[name="birthday"]').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 1900,
+        opens: "right",
+        drops: "up",
+        changeMonth: true,
+        dateFormat: "yy-mm-dd",
+        maxYear: parseInt(moment().format("YYYY"), 10),
       });
-      </script>
-    <title>Competition</title>
+    });
+  </script>
+  <title>Competition</title>
 </head>
 
 <body>
-    <div class="auth_reg_block">
-        <div class="auth_reg_block_content">
-          <p class="auth_reg_block_head_text">Регистрация</p>
-          <form class="auth_reg_style" action="#" method="post">
-            <input type="first_name" name="first_name" placeholder="Введите имя" required="required" >
-            <input type="second_name" name="second_name" placeholder="Введите фамилию" required="required" >
-            <input type="post" name="post" placeholder="Введите должность" required="required"  path="post" >
-            <div class="change_sex">
-              <label>Выберите cвой пол:</label>
-              <select>
-                <option>Мужской</option>
-                <option>Женский</option>
-              </select>
-            </div>  
-            <div class="date_of_birth">
-              <label>Выберите свою дату рождения:</label>
-              <input type="text" name="birthday" value="01/01/2000" />
-            </div>  
-            <div class="auth_reg_button">
-                <button class="back_button" type="" onclick='location.href="reg_first.html"' name="auth_submit">Вернуться</button>
-                <button class="reg_button" type="submit" name="reg_submit">Готово</button>
-            </div>
-          </form>
+  <div class="auth_reg_block">
+    <div class="auth_reg_block_content">
+      <p class="auth_reg_block_head_text">Регистрация</p>
+      <form class="auth_reg_style" action="#" method="post">
+        <input type="first_name" name="first_name" placeholder="Введите имя" required="required" />
+        <input type="second_name" name="second_name" placeholder="Введите фамилию" required="required" />
+        <input type="post" name="post" placeholder="Введите должность" required="required" path="post" />
+        <div class="change_sex">
+          <label>Выберите cвой пол:</label>
+          <select>
+            <option>Мужской</option>
+            <option>Женский</option>
+          </select>
         </div>
-      </div>
-
+        <div class="date_of_birth">
+          <label>Выберите свою дату рождения:</label>
+          <input type="text" name="birthday" value="01/01/2000" />
+        </div>
+        <div class="auth_reg_button">
+          <button class="back_button" type="" onclick='location.href="reg_first.html"' name="auth_submit">
+            Вернуться
+          </button>
+          <button class="reg_button" type="submit" name="reg_submit">
+            Готово
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>
