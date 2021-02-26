@@ -24,8 +24,8 @@ h2 {
   font-family: Montserrat-Medium;
 }
 
-button:focus{
-    outline: none !important;
+button:focus {
+  outline: none !important;
 }
 
 .view {
@@ -59,7 +59,7 @@ button:focus{
 }
 
 .table_view {
-    width: 100%;
+  width: 100%;
   margin-top: 20px;
   font-family: Montserrat-Light;
   font-size: 12px;
@@ -129,13 +129,15 @@ td {
   background-image: url("data:image/svg+xml, <svg version='1.1' id='Capa_2' fill='black' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 409.6 409.6' style='enable-background:new 0 0 409.6 409.6;' xml:space='preserve'><g><g><path d='M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z'/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>");
 }
 
-.add_new, .edit{
+.add_new,
+.edit {
   padding: 0%;
   margin: 0%;
   border: none;
 }
 
-.add_new > input, .edit > input{
+.add_new > input,
+.edit > input {
   width: 100%;
   padding: 0%;
   margin: 0%;
@@ -149,11 +151,11 @@ td {
   padding: 4px 5px 4px 5px;
   /* background-color: red; */
 }
-.edit > input::placeholder{
+.edit > input::placeholder {
   color: black;
 }
 
-.save_button{
+.save_button {
   /* width: 40px; */
   color: #fff;
   margin: 20px 0% 0% 0%;
@@ -166,21 +168,21 @@ td {
   font-family: Montserrat-Bold;
 }
 
-.delete_check{
+.delete_check {
   /* display: block; */
   display: none;
   background-color: rgba(119, 119, 119, 0.75);
   width: 100%;
   height: 100%;
   border-radius: 10px;
-    margin: 0 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  margin: 0 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.delete_check > div{
+.delete_check > div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -191,20 +193,20 @@ td {
   height: 100px;
 }
 
-.delete_check_block > label{
+.delete_check_block > label {
   position: absolute;
   margin: 7% 5.36%;
   font-family: Montserrat-Bold;
   font-size: 15px;
   color: #fff;
 }
-.button_block{
+.button_block {
   position: absolute;
   margin: 18% 23.3%;
   display: flex;
 }
 
-.button_block > button{
+.button_block > button {
   width: 80px;
   font-family: Montserrat-Regular;
   color: black;
@@ -219,13 +221,13 @@ td {
   font-family: Montserrat-Bold;
 }
 
-.button_block > button:hover{
+.button_block > button:hover {
   /* background-color: rgb(255, 100, 100); */
   border: 2px solid rgb(40, 40, 40);
   /* color:white; */
 }
 
-.button_block > button+button:hover{
+.button_block > button + button:hover {
   /* background-color: #4ad295; */
   border: 2px solid rgb(40, 40, 40);
   /* color:white; */

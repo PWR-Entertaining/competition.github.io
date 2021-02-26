@@ -1,29 +1,36 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/auth.css">
-    <title>Competition</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <title>Competition</title>
 </head>
+
 <body>
-    <div class="auth_reg_block">
-        <div class="auth_reg_block_content">
-          <p class="auth_reg_block_head_text">Авторизация</p>
-          <form class="auth_reg_style" action="#" method="post">
-            <input type="email" name="auth_email" placeholder="Введите адрес электронной почты" required >
-            <input type="password" name="auth_pass" placeholder="Введите пароль" required >
-            <div class="auth_reg_button">
-                <button class="auth_button" type="submit" onclick='location.href="html/main.html"' name="auth_submit">Вход</button>
-                <button class="reg_button" type="submit" onclick='location.href="html/reg_first.html"' name="reg_submit">Регистрация</button>
-            </div>
-          </form>
-          <form  class="error" action="">
-            <label>Ошибка авторизации</label>
-            <p>Смысл ошибки</p>
-            <button>ок</button>
-          </form>
+  <div class="auth_reg_block">
+    <div class="auth_reg_block_content">
+      <p class="auth_reg_block_head_text">Авторизация</p>
+      <form class="auth_reg_style" action="#" method="post">
+        <input type="email" name="auth_email" placeholder="Введите адрес электронной почты" required />
+        <input type="password" name="auth_pass" placeholder="Введите пароль" required />
+        <div class="auth_reg_button">
+          <button class="auth_button" type="submit" onclick='location.href="html/main.html"' name="auth_submit">
+            Вход
+          </button>
+          <button class="reg_button" type="submit" onclick='location.href="html/reg_first.html"' name="reg_submit">
+            Регистрация
+          </button>
         </div>
-      </div>
+      </form>
+      <form class="error" action="">
+        <label>Ошибка авторизации</label>
+        <p>Смысл ошибки</p>
+        <button>ок</button>
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>

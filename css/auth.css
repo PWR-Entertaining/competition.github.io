@@ -1,46 +1,44 @@
-
-.auth_reg_block{
-    width: 400px;
-    height: auto;
-    background-color: #4ad295;
-    background-size: cover;
-    border-radius: 30px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+.auth_reg_block {
+  width: 400px;
+  height: auto;
+  background-color: #4ad295;
+  background-size: cover;
+  border-radius: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.auth_reg_block_content{
-    padding-top: 15%;
+.auth_reg_block_content {
+  padding-top: 15%;
 }
 
-@font-face{
-    font-family: "Montserrat-Bold"; /* Имя шрифта */
-    src: url("../fonts/Montserrat/Montserrat-Bold.ttf"); /* Путь к файлу со шрифтом */
-  }
-  
-  @font-face{
-    font-family: "Montserrat-Thin"; 
-    src: url("../fonts/Montserrat/Montserrat-Thin.ttf");
-  }
-
-  @font-face{
-    font-family: "Montserrat-Regular"; 
-    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
-  }
-.auth_reg_block_head_text{
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    margin: 0 10% 10%;
-    font-weight: 600;
-    color: #fff;
-    font-family: Montserrat-Bold;
-    /* opacity: 0.7; */
+@font-face {
+  font-family: "Montserrat-Bold"; /* Имя шрифта */
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf"); /* Путь к файлу со шрифтом */
 }
 
-.auth_reg_style > input{
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url("../fonts/Montserrat/Montserrat-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+.auth_reg_block_head_text {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 10% 10%;
+  font-weight: 600;
+  color: #fff;
+  font-family: Montserrat-Bold;
+  /* opacity: 0.7; */
+}
+
+.auth_reg_style > input {
   display: block;
   margin: 0px auto 20px auto;
   width: 80%;
@@ -49,7 +47,7 @@
   border-radius: 10px;
   font-size: 12px;
   font-family: Montserrat-Regular;
-  border:none;
+  border: none;
   outline: none;
 }
 
@@ -59,19 +57,19 @@ input:focus {
   border: 2px solid #896fff;
 }
 
-.change_sex{
+.change_sex {
   display: block;
   margin: 0 10% 20;
 }
 
-.change_sex > label{
+.change_sex > label {
   margin: 0% 40% 0% 20px;
   font-family: Montserrat-Regular;
   font-size: 0.85em;
   color: #fff;
 }
 
-.change_sex > select{
+.change_sex > select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -91,7 +89,7 @@ input:focus {
   margin: 0 10% 20;
 }
 
-.date_of_birth > label{
+.date_of_birth > label {
   margin: 0% 0% 0% 20px;
   font-family: Montserrat-Regular;
   font-size: 0.85em;
@@ -106,63 +104,63 @@ input:focus {
   height: 30px;
   width: 100px;
   border-radius: 5px;
-  border:none;
+  border: none;
   outline: none;
   font-size: 11px;
   text-align: center;
 }
 
-.auth_reg_button{
-    display: flex;
-    margin: 10% auto 15% 10%;
-    width: 80%;   
+.auth_reg_button {
+  display: flex;
+  margin: 10% auto 15% 10%;
+  width: 80%;
 }
 
-.auth_reg_button > button{
-    display: block;
-    width: 35%;
-    margin: 0 auto;
-    border-radius: 10px;
-    height: 35px;
-    border: none;
-    cursor: pointer;
-    background-color: #fff;
-    font-family: Montserrat-Regular;
+.auth_reg_button > button {
+  display: block;
+  width: 35%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  font-family: Montserrat-Regular;
 }
 
 .auth_reg_button > button:active {
-    color: #000;
-    border: 2px solid #896fff;
+  color: #000;
+  border: 2px solid #896fff;
 }
 
-.error{
+.error {
   display: none;
   background-color: rgba(255, 255, 255, 0.75);
   width: 350px;
   height: 150px;
   border-radius: 10px;
-    margin: 0 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  margin: 0 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.error > label{
-  position:absolute;
+.error > label {
+  position: absolute;
   font-family: Montserrat-Bold;
   margin: 10px 0px 0px 10px;
 }
-.error > p{
-  position:absolute;
+.error > p {
+  position: absolute;
   font-size: 12px;
   font-family: Montserrat-Regular;
   margin: 40px 0px 0px 10px;
   width: 320px;
   height: 70px;
 }
-.error > button{
-  position:absolute;
+.error > button {
+  position: absolute;
   width: 40px;
   font-family: Montserrat-Regular;
   color: #fff;
@@ -176,6 +174,6 @@ input:focus {
   font-family: Montserrat-Bold;
 }
 
-.error  > button:active {
+.error > button:active {
   border: 1px solid #896fff;
 }
