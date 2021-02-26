@@ -60,13 +60,22 @@
                 <option>соревнований</option>
                 <option>видов спорта</option>
               </select>
-              <button class="add"></button>
+              <button class="add" onclick='location.href="create.html"'></button>
         </div>
         <table class="table_view">
-            <tr><td>Иван</td><td>Дидюля</td><td>мужской</td><td>20-09-2000</td><td class="button_td"><button class="edit_button"></button><button class="delete_button"></button></td></tr>
+            <tr><td>Иван</td><td>Дидюля</td><td>мужской</td><td>20-09-2000</td><td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td></tr>
             <tr><td>Мария</td><td>Клинова</td><td>женский</td><td>20-09-2000</td><td class="button_td"><button class="edit_button"></button><button class="delete_button"></button></td></tr>
             <tr><td>Максим</td><td>Гангрена</td><td>мужской</td><td>29-09-2000</td><td class="button_td"><button class="edit_button"></button><button class="delete_button"></button></td></tr>
            </table>
     </div>
+    <form  class="delete_check" action="">
+        <div class="delete_check_block">
+            <label>Вы уверены что хотите удалть?</label>
+            <div class="button_block">
+                <button>да</button>
+                <button>нет</button>
+            </div>
+        </div>
+      </form>
 </body>
 </html>

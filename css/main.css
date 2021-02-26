@@ -6,6 +6,10 @@
   font-family: "Montserrat-Medium";
   src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
 }
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
 
 body {
   margin: 0;
@@ -58,6 +62,7 @@ button:focus{
     width: 100%;
   margin-top: 20px;
   font-family: Montserrat-Light;
+  font-size: 12px;
 }
 td {
   border: 2px solid rgb(175, 175, 175);
@@ -101,9 +106,7 @@ td {
 }
 
 .button_td {
-
   border: none;
-
   padding: 0;
   margin: 0;
 }
@@ -124,6 +127,108 @@ td {
 
 .add:hover {
   background-image: url("data:image/svg+xml, <svg version='1.1' id='Capa_2' fill='black' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 409.6 409.6' style='enable-background:new 0 0 409.6 409.6;' xml:space='preserve'><g><g><path d='M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z'/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>");
+}
+
+.add_new, .edit{
+  padding: 0%;
+  margin: 0%;
+  border: none;
+}
+
+.add_new > input, .edit > input{
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  font-family: Montserrat-Light;
+  font-size: 12px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid rgb(175, 175, 175);
+  border-radius: 7px !important;
+  padding: 4px 5px 4px 5px;
+  /* background-color: red; */
+}
+.edit > input::placeholder{
+  color: black;
+}
+
+.save_button{
+  /* width: 40px; */
+  color: #fff;
+  margin: 20px 0% 0% 0%;
+  border-radius: 10px;
+  /* height: 20px; */
+  border: none;
+  cursor: pointer;
+  background-color: #4ad295;
+  font-size: 14px;
+  font-family: Montserrat-Bold;
+}
+
+.delete_check{
+  /* display: block; */
+  display: none;
+  background-color: rgba(119, 119, 119, 0.75);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+    margin: 0 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.delete_check > div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  background-color: rgba(255, 55, 55, 0.6);
+  width: 300px;
+  height: 100px;
+}
+
+.delete_check_block > label{
+  position: absolute;
+  margin: 7% 7.13%;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  color: #fff;
+}
+.button_block{
+  position: absolute;
+  margin: 18% 23.3%;
+  display: flex;
+}
+
+.button_block > button{
+  width: 80px;
+  font-family: Montserrat-Regular;
+  color: black;
+  margin: 0% 5%;
+  border-radius: 10px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: white;
+  font-size: 12px;
+  font-family: Montserrat-Bold;
+}
+
+.button_block > button:hover{
+  /* background-color: rgb(255, 100, 100); */
+  border: 2px solid rgb(40, 40, 40);
+  /* color:white; */
+}
+
+.button_block > button+button:hover{
+  /* background-color: #4ad295; */
+  border: 2px solid rgb(40, 40, 40);
+  /* color:white; */
 }
 
 @media screen and (max-width: 450px) {
