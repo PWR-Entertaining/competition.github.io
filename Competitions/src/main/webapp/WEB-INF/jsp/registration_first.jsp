@@ -16,14 +16,18 @@
     <div class="auth_reg_block">
         <div class="auth_reg_block_content">
           <p class="auth_reg_block_head_text">Регистрация</p>
-          <form:form class="auth_reg_style" action="/reg_first" method="post"  modelAttribute="userForm">
-            <form:input type="email" name="reg_email" placeholder="Введите адрес электронной почты"  path="email" required="required"/>
+          <form:form class="auth_reg_style" action="/registration_second" method="post" modelAttribute="userForm">
+            <form:input type="email" name="reg_email" placeholder="Введите адрес электронной почты"  path="username" required="required"/>
             <form:input type="password" name="reg_pass" placeholder="Введите пароль"  path="password" required="required"/>
             <form:input type="password" name="reg_pass" placeholder="Повторите пароль" required="required" path="passwordConfirm"/>
+            <p class="auth_reg_block_head_text">${error}</p>
             <div class="auth_reg_button">
-                <form:button class="back_button" type="submit" onclick="history.back()" name="auth_submit">Вернуться</form:button>
-                <form:button class="reg_button_next" type="submit" onclick='location.href="/registration_second"' name="reg_submit">Далее</form:button>
+                <form:button class="back_button" type="button" onclick="history.back()" name="auth_submit">Вернуться</form:button>
+                <form:button class="reg_button_next" type="submit" name="reg_submit">Далее</form:button>
             </div>
+            
+
+     		</form>
           </form:form>
         </div>
       </div>

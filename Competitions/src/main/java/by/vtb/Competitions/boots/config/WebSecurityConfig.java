@@ -12,36 +12,47 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import by.vtb.Competitions.boots.service.UserService;
+
 
 @Configuration
 @EnableWebSecurity
 @EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+    @Autowired
+    UserService userService;
 
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
+    
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
+        
+        
         httpSecurity
                 .csrf()
                     .disable()
                 .authorizeRequests()
                     .antMatchers("/", "/resources/**").permitAll()
                     .antMatchers("/registration_first").not().fullyAuthenticated()
+                    .antMatchers("/reg_fin").not().fullyAuthenticated()
                     .antMatchers("/registration_second").not().fullyAuthenticated()
+                    .antMatchers("/registration").not().fullyAuthenticated()
+                    .antMatchers("/login_fin").not().fullyAuthenticated()  
+                    .antMatchers("/").fullyAuthenticated()
                 .anyRequest().authenticated()
                 .and()
                     .formLogin()
                     .loginPage("/login")
-                    .defaultSuccessUrl("/login")
+                    .defaultSuccessUrl("/")
                     .permitAll()
                 .and()
                     .logout()
                     .permitAll()
-                    .logoutSuccessUrl("/");
+                    .logoutSuccessUrl("/login");
     }
     
     
@@ -49,9 +60,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().antMatchers("/css/**","/js/**","/fonts/**","/images/**");
     }
-
-    @Autowired
+    
     protected void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-     //   auth.userDetailsService(userService).passwordEncoder(bCryptPasswordEncoder());
+        auth.userDetailsService(userService).passwordEncoder(bCryptPasswordEncoder());
     }
+
 }

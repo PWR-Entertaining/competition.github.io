@@ -22,25 +22,52 @@ public class UserService implements UserDetailsService {
     @Autowired
     BCryptPasswordEncoder bCryptPasswordEncoder;
     
-    
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        
-        User user = userRepository.findByEmail(username);
+        User user = userRepository.findByUsername(username);
         
         if (user==null) {
             throw new UsernameNotFoundException("User not found");
         }
+        
         return user;
     }
     
     public boolean saveUser(User user) {
-        User userFromDB = userRepository.findByEmail(user.getEmail());
+        User userFromDB = userRepository.findByUsername(user.getUsername());
         if(userFromDB == null) {
             user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
             userRepository.save(user);
             return true;
         }
         return false;
+    }
+    
+    public User findByEmailAndPassword(User user) {
+        System.out.println("тут3");
+        
+        User userFromDB = userRepository.findByUsernameAndPassword(user.getUsername(), bCryptPasswordEncoder.encode(user.getPassword()));
+        
+        if (userFromDB==null) {
+            throw new UsernameNotFoundException("User not found");
+        }
+        
+        System.out.println("тут4");
+        
+        return userFromDB;
+    }
+    
+    public User findByUsernameAndPassword(User user) {
+        System.out.println("тут4");
+        
+        User userFromDB = userRepository.findByUsernameAndPassword(user.getUsername(), bCryptPasswordEncoder.encode(user.getPassword()));
+        
+        if (userFromDB==null) {
+            throw new UsernameNotFoundException("User not found");
+        }
+        
+        System.out.println("тут5");
+        
+        return userFromDB;
     }
     
     

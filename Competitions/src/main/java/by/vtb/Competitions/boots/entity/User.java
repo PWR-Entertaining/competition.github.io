@@ -1,7 +1,7 @@
 package by.vtb.Competitions.boots.entity;
 
-import java.sql.Date;
 import java.util.Collection;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +19,7 @@ public class User implements UserDetails{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String email;
+    private String username;
     private String firstname;
     private String lastname;
     private String sex;
@@ -36,9 +36,6 @@ public class User implements UserDetails{
     
     public int getId() {
         return id;
-    }
-    public String getEmail() {
-        return email;
     }
     public String getFirstname() {
         return firstname;
@@ -60,9 +57,6 @@ public class User implements UserDetails{
     }
     public void setId(int id) {
         this.id = id;
-    }
-    public void setEmail(String email) {
-        this.email = email;
     }
     public void setFirstname(String firstname) {
         this.firstname = firstname;
@@ -88,19 +82,24 @@ public class User implements UserDetails{
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
     }
-    public String getUsername() {
-        return this.email;
-    }
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
     public boolean isEnabled() {
         return true;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }
