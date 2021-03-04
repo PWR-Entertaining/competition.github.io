@@ -11,7 +11,7 @@
 <header>
     <nav>
         <div class="logo">
-            <button class="go_main" onclick='location.href="main.html"'></button>
+            <button class="go_main" onclick='location.href="view.html"'></button>
         </div>
         <div class="menu">
             <h3>Быстрее, выше, сильнее!</h3>
@@ -27,38 +27,115 @@
         <div class="categories">
             <h2>Добавление</h2>
             <select>
-                <option>пользователей</option>
+                <option>соревнований</option>
                 <option>участников</option>
                 <option>тренеров</option>
-                <option>соревнований</option>
                 <option>видов спорта</option>
             </select>
         </div>
-        <table class="table_view">
+        <table id="competitions_table" class="table_view" style="display: block;">
             <tr>
-                <td>Иван</td>
-                <td>Дидюля</td>
-                <td>мужской</td>
-                <td>20-09-2000</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
             </tr>
             <tr>
-                <td>Мария</td>
-                <td>Клинова</td>
-                <td>женский</td>
-                <td>20-09-2000</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
             </tr>
             <tr>
-                <td>Максим</td>
-                <td>Гангрена</td>
-                <td>мужской</td>
-                <td>29-09-2000</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
             </tr>
             <tr>
-                <td class="add_new"><input type="first_name" placeholder="Введите имя" required="required"></td>
-                <td class="add_new"><input type="second_name" placeholder="Введите фамилию" required="required"></td>
-                <td class="add_new"><input type="sex" placeholder="Введите свой пол" required="required"></td>
-                <td class="add_new"><input type="date_of_birth" placeholder="Введите свою дату рождения"
-                        required="required"></td>
+                <td class="add_new"><input type="first_name" placeholder="playceholder" required="required"></td>
+                <td class="add_new"><input type="second_name" placeholder="playceholder" required="required"></td>
+                <td class="add_new"><input type="sex" placeholder="playceholder" required="required"></td>
+                <td class="add_new"><input type="date_of_birth" placeholder="playceholder"required="required"></td>
+            </tr>
+        </table>
+        <table id="participant_table" class="table_view" style="display: none;">
+            <tr>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+            </tr>
+            <tr>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+            </tr>
+            <tr>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+            </tr>
+            <tr>
+                <td class="add_new"><input type="first_name" placeholder="placeholder" required="required"></td>
+                <td class="add_new"><input type="second_name" placeholder="playceholder" required="required"></td>
+                <td class="add_new"><input type="sex" placeholder="playceholder" required="required"></td>
+                <td class="add_new"><input type="date_of_birth" placeholder="playceholder"required="required"></td>
+            </tr>
+        </table>
+        <table id="trainers_table" class="table_view" style="display: none;">
+            <tr>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+            </tr>
+            <tr>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+            </tr>
+            <tr>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+            </tr>
+            <tr>
+                <td class="add_new"><input type="first_name" placeholder="placeholder" required="required"></td>
+                <td class="add_new"><input type="second_name" placeholder="placeholder" required="required"></td>
+                <td class="add_new"><input type="sex" placeholder="placeholder" required="required"></td>
+                <td class="add_new"><input type="date_of_birth" placeholder="placeholder"required="required"></td>
+            </tr>
+        </table>
+        <table id="sports_table"
+         class="table_view" style="display: none;">
+            <tr>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+            </tr>
+            <tr>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+            </tr>
+            <tr>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+            </tr>
+            <tr>
+                <td class="add_new"><input type="first_name" placeholder="placeholder" required="required"></td>
+                <td class="add_new"><input type="second_name" placeholder="placeholder" required="required"></td>
+                <td class="add_new"><input type="sex" placeholder="playceholder" required="required"></td>
+                <td class="add_new"><input type="date_of_birth" placeholder="placeholder"required="required"></td>
             </tr>
         </table>
         <button name="Save" class="save_button" onclick='location.href="main.html"'>Сохранить</button>

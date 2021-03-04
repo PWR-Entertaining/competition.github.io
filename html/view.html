@@ -1,0 +1,172 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <script src="../js/view_crate_edit.js"></script>
+    <title>Просмотр</title>
+</head>
+<header>
+    <nav>
+        <div class="logo">
+            <button class="go_main" onclick='location.href="view.html"'></button>
+        </div>
+        <div class="menu">
+            <h3>Быстрее, выше, сильнее!</h3>
+            <!-- <ul> -->
+            <!-- <li class="main_el"><p onclick='location.href="create.html"'>Создание</p> -->
+            <!-- <ul class="side_list">
+                        <li onclick="">Соревнование</li>
+                        <li onclick="">Участника</li>
+                        <li onclick="">Пользователя</li>
+                        <li onclick="">Тренера</li>
+                        <li onclick="">Вид спорта</li>
+                    </ul> -->
+            <!-- </li> -->
+            <!-- <li class="main_el"><p onclick='location.href="edit.html"'>Редактирование</p> -->
+            <!-- <ul class="side_list">
+                        <li onclick="">Соревнование</li>
+                        <li onclick="">Участника</li>
+                        <li onclick="">Пользователя</li>
+                        <li onclick="">Тренера</li>
+                        <li onclick="">Вид спорта</li>
+                    </ul> -->
+            <!-- </li> -->
+            <!-- <li class="main_el"><p onclick='location.href="delete.html"'>Удаление</p> -->
+            <!-- <ul class="side_list">
+                        <li onclick="">Соревнование</li>
+                        <li onclick="">Участника</li>
+                        <li onclick="">Пользователя</li>
+                        <li onclick="">Тренера</li>
+                        <li onclick="">Вид спорта</li>
+                    </ul> -->
+            <!-- </li> -->
+            <!-- </ul> -->
+        </div>
+        <div class="go_out">
+            <button class="go_out_button" onclick='location.href="../index.html"'></button>
+        </div>
+    </nav>
+</header>
+
+<body onclick="">
+    <div class="view">
+        <div class="categories">
+            <h2>Просмотр</h2>
+            <select id="select_view" onchange="change_view()">
+                <option>соревнований</option>
+                <option>участников</option>
+                <option>тренеров</option>
+                <option>видов спорта</option>
+            </select>
+            <button class="add" onclick='location.href="create.html"'></button>
+        </div>
+        <table id="competitions_table" class="table_view" style="display: block;">
+            <tr>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+            <tr>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+            <tr>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td>competitions</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+        </table>
+        <table id="participant_table" class="table_view" style="display: none;">
+            <tr>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+            <tr>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+            <tr>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+                <td>participant</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+        </table>
+        <table id="trainers_table" class="table_view" style="display: none;">
+            <tr>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+            <tr>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+            <tr>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td>trainers</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+        </table>
+        <table id="sports_table"
+         class="table_view" style="display: none;">
+            <tr>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+            <tr>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+            <tr>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+                <td>sports</td>
+                <td class="button_td"><button class="edit_button" onclick='location.href="edit.html"'></button><button class="delete_button"></button></td>
+            </tr>
+        </table>
+    </div>
+    <form class="delete_check" action="">
+        <div class="delete_check_block">
+            <label>Вы уверены что хотите удалить?</label>
+            <div class="button_block">
+                <button>да</button>
+                <button>нет</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
