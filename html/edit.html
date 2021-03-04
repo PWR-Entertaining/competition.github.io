@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
-    <title>Competition</title>
+    <script src="../js/view_crate_edit.js"></script>
+    <title>Edit</title>
 </head>
 <header>
     <nav>
@@ -26,32 +27,92 @@
     <div class="view">
         <div class="categories">
             <h2>Редактирование</h2>
-            <select>
+            <select id="select_view" onchange="change_view()">
                 <option>соревнований</option>
                 <option>участников</option>
                 <option>тренеров</option>
                 <option>видов спорта</option>
             </select>
         </div>
-        <table class="table_view">
+        <table id="competitions_table" class="table_view" style="display: block;">
             <tr>
-                <td class="edit"><input type="first_name" placeholder="Иван" required="required"></td>
-                <td class="edit"><input type="second_name" placeholder="Дидюля" required="required"></td>
-                <td class="edit"><input type="sex" placeholder="мужской" required="required"></td>
-                <td class="edit"><input type="date_of_birth" placeholder="20-09-2000" required="required"></td>
+                <td class="edit"><input type="first_name" placeholder="competitions" required="required"></td>
+                <td class="edit"><input type="second_name" placeholder="competitions" required="required"></td>
+                <td class="edit"><input type="sex" placeholder="competitions" required="required"></td>
+                <td class="edit"><input type="date_of_birth" placeholder="competitions" required="required"></td>
             </tr>
             <tr>
-                <td class="edit"><input type="first_name" placeholder="Мария" required="required"></td>
-                <td class="edit"><input type="second_name" placeholder="Клинова" required="required"></td>
-                <td class="edit"><input type="sex" placeholder="женский" required="required"></td>
-                <td class="edit"><input type="date_of_birth" placeholder="20-09-2000" required="required"></td>
+                <td class="edit"><input type="first_name" placeholder="competitions" required="required"></td>
+                <td class="edit"><input type="second_name" placeholder="competitions" required="required"></td>
+                <td class="edit"><input type="sex" placeholder="competitions" required="required"></td>
+                <td class="edit"><input type="date_of_birth" placeholder="competitions" required="required"></td>
             </tr>
             <tr>
-                <td class="edit"><input type="first_name" placeholder="Максим" required="required"></td>
-                <td class="edit"><input type="second_name" placeholder="Гангрена" required="required"></td>
-                <td class="edit"><input type="sex" placeholder="мужской" required="required"></td>
-                <td class="edit"><input type="date_of_birth" placeholder="29-09-2000" required="required"></td>
+                <td class="edit"><input type="first_name" placeholder="competitions" required="required"></td>
+                <td class="edit"><input type="second_name" placeholder="competitions" required="required"></td>
+                <td class="edit"><input type="sex" placeholder="competitions" required="required"></td>
+                <td class="edit"><input type="date_of_birth" placeholder="competitions" required="required"></td>
             </tr>
+        </table>
+        <table id="participant_table" class="table_view" style="display: none;">
+            <tr>
+                <td class="edit"><input type="first_name" placeholder="participant" required="required"></td>
+                <td class="edit"><input type="second_name" placeholder="participant" required="required"></td>
+                <td class="edit"><input type="sex" placeholder="participant" required="required"></td>
+                <td class="edit"><input type="date_of_birth" placeholder="participant" required="required"></td>
+            </tr>
+            <tr>
+                <td class="edit"><input type="first_name" placeholder="participant" required="required"></td>
+                <td class="edit"><input type="second_name" placeholder="participant" required="required"></td>
+                <td class="edit"><input type="sex" placeholder="participant" required="required"></td>
+                <td class="edit"><input type="date_of_birth" placeholder="participant" required="required"></td>
+            </tr>
+            <tr>
+                <td class="edit"><input type="first_name" placeholder="participant" required="required"></td>
+                <td class="edit"><input type="second_name" placeholder="participant" required="required"></td>
+                <td class="edit"><input type="sex" placeholder="participant" required="required"></td>
+                <td class="edit"><input type="date_of_birth" placeholder="participant" required="required"></td>
+            </tr>
+        </table>
+        <table id="trainers_table" class="table_view" style="display: none;">
+            <tr>
+                <td class="edit"><input type="first_name" placeholder="trainers" required="required"></td>
+                <td class="edit"><input type="second_name" placeholder="trainers" required="required"></td>
+                <td class="edit"><input type="sex" placeholder="trainers" required="required"></td>
+                <td class="edit"><input type="date_of_birth" placeholder="trainers" required="required"></td>
+            </tr>
+            <tr>
+                <td class="edit"><input type="first_name" placeholder="trainers" required="required"></td>
+                <td class="edit"><input type="second_name" placeholder="trainers" required="required"></td>
+                <td class="edit"><input type="sex" placeholder="trainers" required="required"></td>
+                <td class="edit"><input type="date_of_birth" placeholder="trainers" required="required"></td>
+            </tr>
+            <tr>
+                <td class="edit"><input type="first_name" placeholder="trainers" required="required"></td>
+                <td class="edit"><input type="second_name" placeholder="trainers" required="required"></td>
+                <td class="edit"><input type="sex" placeholder="trainers" required="required"></td>
+                <td class="edit"><input type="date_of_birth" placeholder="trainers" required="required"></td>
+            </tr>
+        </table>
+        <table id="sports_table" class="table_view" style="display: none;">
+         <tr>
+            <td class="edit"><input type="first_name" placeholder="sport" required="required"></td>
+            <td class="edit"><input type="second_name" placeholder="sport" required="required"></td>
+            <td class="edit"><input type="sex" placeholder="sport" required="required"></td>
+            <td class="edit"><input type="date_of_birth" placeholder="sport" required="required"></td>
+        </tr>
+        <tr>
+            <td class="edit"><input type="first_name" placeholder="sport" required="required"></td>
+            <td class="edit"><input type="second_name" placeholder="sport" required="required"></td>
+            <td class="edit"><input type="sex" placeholder="sport" required="required"></td>
+            <td class="edit"><input type="date_of_birth" placeholder="sport" required="required"></td>
+        </tr>
+        <tr>
+            <td class="edit"><input type="first_name" placeholder="sport" required="required"></td>
+            <td class="edit"><input type="second_name" placeholder="sport" required="required"></td>
+            <td class="edit"><input type="sex" placeholder="sport" required="required"></td>
+            <td class="edit"><input type="date_of_birth" placeholder="sport" required="required"></td>
+        </tr>
         </table>
         <button name="Save" class="save_button" onclick='location.href="main.html"'>Сохранить</button>
     </div>

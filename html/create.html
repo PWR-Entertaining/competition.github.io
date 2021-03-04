@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
-    <title>Competition</title>
+    <script src="../js/view_crate_edit.js"></script>
+    <title>Create</title>
 </head>
 <header>
     <nav>
@@ -26,7 +27,7 @@
     <div class="view">
         <div class="categories">
             <h2>Добавление</h2>
-            <select>
+            <select id="select_view" onchange="change_view()">
                 <option>соревнований</option>
                 <option>участников</option>
                 <option>тренеров</option>
