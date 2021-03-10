@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/account.css">
+    <title>Account</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <button class="go_main" onclick='location.href="view.html"'></button>
+            </div>
+            <div class="menu">
+                <h3>Быстрее, выше, сильнее!</h3>
+            </div>
+            <div class="user_go_out_block">
+                <button class="go_out_button" onclick='location.href="../index.html"'></button>
+                <button class="account_button" onclick='location.href="account.html"'></button>
+            </div>
+        </nav>
+    </header>
+    <div class="personal_area">
+        <div class="info_board">
+            <p>mail@mail.com</p>
+            <p>Имя Фамилия</p>
+            <p>пол</p>
+            <p>Дата рождения</p>
+        </div>
+        <div class="change_pass">
+            <form class="change_pass_style" action="#" method="post">
+                <input type="password" name="reg_pass" placeholder="Введите текущий пароль" required="required" />
+                <input type="password" name="reg_pass" placeholder="Введите новый пароль" required="required" />
+                <input type="password" name="reg_pass" placeholder="Повторите новый пароль" required="required" />
+                <p class="change_pass_message">Неверно введен текущий пароль!</p>
+                <button class="apply_button" type="" onclick='location.href="../index.html"' name="auth_submit">Изменить</button>
+              </form>
+        </div>
+    </div>
+</body>
+</html>

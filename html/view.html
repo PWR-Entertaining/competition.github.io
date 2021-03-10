@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
     <script src="../js/view_crate_edit.js"></script>
+    <script src="../js/create_link.js"></script>
     <title>Просмотр</title>
 </head>
 <header>
@@ -46,13 +47,14 @@
             <!-- </li> -->
             <!-- </ul> -->
         </div>
-        <div class="go_out">
+        <div class="user_go_out_block">
             <button class="go_out_button" onclick='location.href="../index.html"'></button>
+            <button class="account_button" onclick='location.href="account.html"'></button>
         </div>
     </nav>
 </header>
 
-<body onclick="">
+<body>
     <div class="view">
         <div class="categories">
             <h2>Просмотр</h2>
@@ -62,7 +64,7 @@
                 <option>тренеров</option>
                 <option>видов спорта</option>
             </select>
-            <button class="add" onclick='location.href="create.html"'></button>
+            <button class="add" onclick="change_link()"></button>
         </div>
         <table id="competitions_table" class="table_view" style="display: block;">
             <tr>
