@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+  }
+  @font-face {
+    font-family: "Montserrat-Medium";
+    src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  }
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat-Regular";  
+}
+
+table{
+    border: solid rgba(255, 255, 255, 0.5) 2px;
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    width: auto;
+}
+
+td{
+    border: solid rgba(255, 255, 255, 0.9) 2px;
+    border-radius: 7px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+}
+
+table > caption{
+    margin: 10px 0px;
+}
+
+button {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 7px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    font-family: Montserrat-Regular;
+  }
+
+  input {
+    box-shadow: none;
+    padding: 7px 10px 7px 10px;
+    font-family: Montserrat-Regular;
+    height: 30px;
+    width: auto;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 11px;
+    /* text-align: center; */
+  }
+  
+  select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 7px;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 0px;
+    font-family: Montserrat-Light;
+    width: 100%;
+    font-size: 14px;
+    text-align:center;
+  }
+
+.cve_main_block{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: auto;
+    height: auto;
+    margin: 0px auto;
+}
+
+.one_block{
+    background-color: #4ad295;
+    border-radius: 30px;
+    width: 300px;
+    height: auto;
+    margin: 20px 20px auto 20px;
+    padding: 20px 20px;
+    
+}
+
+.second_block{
+    background-color: #4ad295;
+    border-radius: 30px;
+    width: 300px;
+    height: auto;
+    margin: 20px 20px auto 20px;
+    padding: 20px 20px;
+    top: 20px;
+}
+
+.name_surname_block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0px auto 10px auto;
+}
+.name_surname_block > input{
+    width: 130px;
+    margin: 10px 10px 10px 10px;
+}
+
+#num_certificate{
+    width: 100%;
+}
+
+.center_table{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.center_table > table{
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 7px;
+}
+
+.center_table > button{
+    margin-bottom: 20px;
+    float: right;
+}
+.add_new > input{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    font-family: Montserrat-Light;
+    font-size: 12px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid rgb(175, 175, 175);
+    border-radius: 7px !important;
+    padding: 4px 5px 4px 5px;
+    text-align: left;
+}
+
+.add_new{
+    border: none;
+}
+
+.attributes_block > input{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+.second_block > button{
+    margin-top: 20px;
+    float: right;
+}
+
+.main_block{
+    background-color: #4ad295;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.top_block{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.top_block > .center_table{
+    width: 400px;
+    height: auto;
+    margin: auto 40px;
+}
+
+.attributes_block{
+    width: 200px;
+    height: auto;
+    margin: 20px auto 0px auto;
+}
+
+.save_button{   
+    float: right;
+    margin: 20px 40px;
+    align-items:stretch;
+}
+
+.table_width{
+    width: 70%;
+    min-width: 250px;
+    height: auto;
+    margin: 0px auto;
+}
+
+.bottom_block{
+    margin-bottom: 80px;
+}

@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.personal_area {
+  width: 90%;
+  /* min-height: 300px; */
+  height: auto;
+  padding: 0;
+  margin: 0% 5%;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.info_board {
+  display: block;
+  background-color: #4ad295;
+  border-radius: 30px;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 600px;
+  width: 40%;
+  margin: 5% auto;
+  height: auto;
+  color: white;
+}
+
+.info_board > p {
+  display: block;
+  width: 270px;
+  height: 30px;
+  font-family: "Montserrat-Medium";
+  font-size: 21;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.change_pass {
+  background-color: #4ad295;
+  border-radius: 30px;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 600px;
+  width: 40%;
+  margin: 5% auto;
+  height: auto;
+}
+
+.change_pass_style > input {
+  display: block;
+  margin: 10px auto;
+  width: 270px;
+  height: 45px;
+  padding-left: 5%;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: Montserrat-Regular;
+  border: none;
+  outline: none;
+}
+
+.apply_button {
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  font-family: Montserrat-Regular;
+}
+
+.auth_reg_button > button:active {
+    color: #000;
+    border: 2px solid #896fff;
+  }
+
+.change_pass_message {
+  padding: 0;
+  margin: 10px auto;
+  height: auto;
+  width: auto;
+  max-width: 255px;
+  font-family: "Montserrat-Light";
+  font-size: 12px;
+  text-align: center;
+}
